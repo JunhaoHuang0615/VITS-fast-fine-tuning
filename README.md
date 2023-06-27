@@ -10,7 +10,9 @@ to make it able to do the following tasks in less than 1 hour:
 Welcome to play around with the base models!  
 Chinese & English & Japanese：[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/Plachta/VITS-Umamusume-voice-synthesizer) Author: Me  
 
-Chinese & Japanese：[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/sayashi/vits-uma-genshin-honkai) Author: [SayaSS](https://github.com/SayaSS)
+Chinese & Japanese：[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/sayashi/vits-uma-genshin-honkai) Author: [SayaSS](https://github.com/SayaSS)  
+
+Chinese only：(No running huggingface spaces) Author: [Wwwwhy230825](https://github.com/Wwwwhy230825)
 
 
 ### Currently Supported Tasks:
@@ -26,8 +28,9 @@ Chinese & Japanese：[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F
 
 
 ## Fine-tuning
-It's recommended to perform fine-tuning on [Google Colab](https://colab.research.google.com/drive/1pn1xnFfdLK63gVXDwV4zCXfVeo8c-I-0?usp=sharing)
-because the original VITS has some dependencies that are difficult to configure.
+See [LOCAL.md](https://github.com/Plachtaa/VITS-fast-fine-tuning/blob/main/LOCAL.md) for local training guide.  
+Alternatively, you can perform fine-tuning on [Google Colab](https://colab.research.google.com/drive/1pn1xnFfdLK63gVXDwV4zCXfVeo8c-I-0?usp=sharing)
+
 
 ### How long does it take? 
 1. Install dependencies (3 min)
@@ -49,6 +52,7 @@ inference
 └───G_latest.pth
 ```
 4. run `inference.exe`, the browser should pop up automatically.
+5. Note: you must install `ffmpeg` to enable voice conversion feature.
 
 ## Use in MoeGoe
 0. Prepare downloaded model & config file, which are named `G_latest.pth` and `moegoe_config.json`, respectively.
